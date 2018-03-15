@@ -13,4 +13,5 @@ fi
 #    jp2a picture_file_name
 #
 # Note: picture_file_name should be existed in the picture directory
-jp2a "pictures"/$1
+jp2a "pictures"/$1 > ascii_pictures/temp.txt
+
