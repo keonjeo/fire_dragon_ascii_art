@@ -38,5 +38,4 @@ chmod a+x ascii_pictures/$new_file_name.sh
 # git commands
 git add ascii_pictures/$new_file_name.sh
 git commit -m "add $new_file_name.sh script into the project"
-
-
+git push origin master
