@@ -15,3 +15,6 @@ fi
 # Note: picture_file_name should be existed in the picture directory
 jp2a "pictures"/$1 > ascii_pictures/temp.txt
 
+# use the tr bin to filter 'M' character
+cat ascii_pictures/temp.txt | tr "M" " "
+
