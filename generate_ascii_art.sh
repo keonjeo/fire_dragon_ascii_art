@@ -2,6 +2,10 @@
 
 clear
 
-jp2a $1
+if [ ! -d "ascii_pictures" ];then
+  mkdir ascii_pictures
+else
+  echo "The ascii_pictures directory has been existing in your system."
+fi
 
-
+#jp2a $1
