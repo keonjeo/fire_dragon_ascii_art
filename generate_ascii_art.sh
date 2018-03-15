@@ -8,4 +8,4 @@ else
   echo "The ascii_pictures directory has been existing in your system."
 fi
 
-jp2a $1
+jp2a "ascii_pictures"/$1
