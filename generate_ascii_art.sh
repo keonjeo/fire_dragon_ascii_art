@@ -22,10 +22,14 @@ new_file_name=${file_name%.*}
 echo "#!/bin/bash --login" > ascii_pictures/$new_file_name.sh
 echo "clear" >> ascii_pictures/$new_file_name.sh
 echo "cat << \"EOF\"" >> ascii_pictures/$new_file_name.sh
+echo "" >> ascii_pictures/$new_file_name.sh
+echo "" >> ascii_pictures/$new_file_name.sh
+echo "" >> ascii_pictures/$new_file_name.sh
 
 # use the tr bin to filter 'M' character
 cat ascii_pictures/temp.txt | tr "M" " " >> ascii_pictures/$new_file_name.sh
 
+echo "" >> ascii_pictures/$new_file_name.sh
 echo "EOF" >> ascii_pictures/$new_file_name.sh
 
 
